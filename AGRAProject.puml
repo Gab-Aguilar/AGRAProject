@@ -1,0 +1,13 @@
+@startuml
+rectangle Wheel_Of_Fortune(2019-2020){
+(Wheel of Fortune)--->(Categories)
+(Categories)-->(FRUITS)
+(MOVIES)<-(Categories)
+(Categories)->(COUNTRIES)
+}
+Participant----(MOVIES)
+Participant-[hidden](FRUITS)
+(FRUITS)---Participant
+Participant-(COUNTRIES)
+Participant --> (EARN MONEY OR NOT)
+@enduml
